@@ -12,7 +12,7 @@ Sylas-KI aims to use power consumption data to train machine learning models in 
 
 ### Data
 
-If you are just interested in synthetic power profiles here you can find consumption profiles for a complete year ([hybridWGAN](https://doi.org/10.25625/A5VZA9) and [DDPM](https://doi.org/10.25625/A5VZA9)) as a CSV-file. The models were trained on ~550 private households of the [OpenMeter](https://appstore.logarithmo.de/app/openmeterplatform/v1/demo/page-datenuebersicht?lang=EN) platform.
+If you are just interested in ~550 generated synthetic power profiles you can them as CSV-files ([hybridWGAN](https://doi.org/10.25625/A5VZA9) and [DDPM](https://doi.org/10.25625/A5VZA9)). The models were trained on ~550 private households of the [OpenMeter](https://appstore.logarithmo.de/app/openmeterplatform/v1/demo/page-datenuebersicht?lang=EN) platform and subsequently we used the IDs as condition to generate for each one power consumption data from 01-01-2021 till 31.12.2023 with 15min resolution.
 
 ## Generator for synthetic power profiles
 
