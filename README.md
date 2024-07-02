@@ -1,6 +1,8 @@
 # Sylas-KI
 
-![sylas_ai_Logo](https://github.com/FraunhoferIEE/sylaski/blob/main/pictures/Sylaski_project_pic.png)
+<div style="text-align: center;">
+  <img src="Uhttps://github.com/FraunhoferIEE/sylaski/blob/main/pictures/Sylaski_project_pic.png" alt="Sylas-KI project logo" style="width:90%;">
+</div>
 
 ## Idea
 
