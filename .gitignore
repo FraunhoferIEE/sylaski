@@ -1,0 +1,21 @@
+/outputs
+/data
+/models
+/figures
+/experiments
+.ipynb_checkpoints
+
+*__pycache__
+syndatagenerators/train_data
+
+*.pyc
+*.egg-info
+*.csv
+*.hydra
+*.log
+*.pth
+*.png
+*.h5
+
+#excluding experimental results
+syndatagenerators/models/ddpm/experiments
