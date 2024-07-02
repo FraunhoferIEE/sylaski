@@ -1,7 +1,7 @@
 # Sylas-KI
 
 <div style="text-align: center;">
-  <img src="Uhttps://github.com/FraunhoferIEE/sylaski/blob/main/pictures/Sylaski_project_pic.png" alt="Sylas-KI project logo" style="width:90%;">
+  <img src="https://github.com/FraunhoferIEE/sylaski/blob/main/pictures/Sylaski_project_pic.png" alt="Sylas-KI project logo" style="width:90%;">
 </div>
 
 ## Idea
