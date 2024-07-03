@@ -6,13 +6,13 @@
 
 ## Idea
 
-[Sylas-KI](https://www.iee.fraunhofer.de/de/projekte/suche/2021/sylas-ki.html) stands for "Synthetische Lastzeitreihen für Energiesystemanalysen mit Verfahren der Künstlichen Intelligenz / synthetic power profiles for energy system analysis using AI". The [project](https://www.iee.fraunhofer.de/de/projekte/suche/2021/sylas-ki.html) funded by the German ministry for research and education ([BMBF](https://www.bmbf.de/bmbf/de/home/home_node.html)).
+[Sylas-KI](https://www.iee.fraunhofer.de/de/projekte/suche/2021/sylas-ki.html) stands for "Synthetische Lastzeitreihen für Energiesystemanalysen mit Verfahren der Künstlichen Intelligenz" / synthetic power profiles for energy system analysis using AI. [Sylas-KI](https://www.iee.fraunhofer.de/de/projekte/suche/2021/sylas-ki.html) is funded by the German ministry for research and education ([BMBF](https://www.bmbf.de/bmbf/de/home/home_node.html)).
 
 Sylas-KI aims to use power consumption data to train machine learning models in order to generate synthetic power profiles.
 
 ### Data
 
-If you are just interested in ~550 generated synthetic power profiles you can them as CSV-files ([hybridWGAN](https://doi.org/10.25625/A5VZA9) and [DDPM](https://doi.org/10.25625/A5VZA9)). The models were trained on ~550 private households of the [OpenMeter](https://appstore.logarithmo.de/app/openmeterplatform/v1/demo/page-datenuebersicht?lang=EN) platform and subsequently we used the IDs as condition to generate for each one power consumption data from 01-01-2021 till 31.12.2023 with 15min resolution.
+If you are just interested in **~550 generated synthetic power profiles** you can them as CSV-files ([hybridWGAN](https://doi.org/10.25625/A5VZA9) and [DDPM](https://doi.org/10.25625/A5VZA9)). The models were trained on ~550 private households of the [OpenMeter](https://appstore.logarithmo.de/app/openmeterplatform/v1/demo/page-datenuebersicht?lang=EN) platform and subsequently, user IDs were used as a condition to generate for each one power consumption data from `01-01-2021 till 31.12.2023` with `15min resolution`.
 
 ## Generator for synthetic power profiles
 
@@ -41,6 +41,12 @@ Denoising Diffusion Probabilistic Models (DDPM) are model architectures that are
 
 During the SylasKI project DDPMs were one of the main architectures that were investigated. The implementation of models, necessary utilities and experiments can be found under `syndatagenerators/models/ddpm`.
 An exemplary notebook were a model is initialized, trained and sampled can be found under [example notebook](https://github.com/FraunhoferIEE/sylaski/blob/main/syndatagenerators/models/ddpm/training_example.ipynb)
+
+#### In a video we explain the workings of this examplary notebook
+
+[![An Introduction into time series generation with DDPMs](https://github.com/FraunhoferIEE/sylaski/blob/main/pictures/Sylaski_project_pic.png)](https://youtu.be/Z0WWsyelnyQ)
+
+
 
 ### Metrics, Analysis, Visualization
 
