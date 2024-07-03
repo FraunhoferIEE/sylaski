@@ -6,7 +6,7 @@
 
 ## Idea
 
-Sylas-KI stands for "Synthetische Lastzeitreihen für Energiesystemanalysen mit Verfahren der Künstlichen Intelligenz / synthetic power profiles for energy system analysis using AI". The project funded by the German ministry for research and education ([BMBF](https://www.bmbf.de/bmbf/de/home/home_node.html)).
+[Sylas-KI](https://www.iee.fraunhofer.de/de/projekte/suche/2021/sylas-ki.html) stands for "Synthetische Lastzeitreihen für Energiesystemanalysen mit Verfahren der Künstlichen Intelligenz / synthetic power profiles for energy system analysis using AI". The [project](https://www.iee.fraunhofer.de/de/projekte/suche/2021/sylas-ki.html) funded by the German ministry for research and education ([BMBF](https://www.bmbf.de/bmbf/de/home/home_node.html)).
 
 Sylas-KI aims to use power consumption data to train machine learning models in order to generate synthetic power profiles.
 
