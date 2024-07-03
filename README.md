@@ -12,21 +12,21 @@ Sylas-KI aims to use power consumption data to train machine learning models in 
 
 ### Data
 
-If you are just interested in **~550 generated synthetic power profiles** you can them as CSV-files ([hybridWGAN](https://doi.org/10.25625/A5VZA9) and [DDPM](https://doi.org/10.25625/A5VZA9)). The models were trained on ~550 private households of the [OpenMeter](https://appstore.logarithmo.de/app/openmeterplatform/v1/demo/page-datenuebersicht?lang=EN) platform and subsequently, user IDs were used as a condition to generate for each one power consumption data from `01-01-2021 till 31.12.2023` with `15min resolution`.
+If you are just interested in **~550 generated synthetic power profiles** you can them as CSV-files ([hybridWGAN](https://doi.org/10.25625/A5VZA9) and [DDPM](https://doi.org/10.25625/A5VZA9)). The models were trained on ~550 private households of the [OpenMeter](https://appstore.logarithmo.de/app/openmeterplatform/v1/demo/page-datenuebersicht?lang=EN) platform and subsequently, user IDs were used as a condition to generate for each one power consumption data from `01-01-2021 till 31.12.2023` with `15min time resolution`.
 
 ## Generator for synthetic power profiles
 
-A hybridWGAN and [DDPM](https://github.com/FraunhoferIEE/sylaski/blob/main/syndatagenerators/models/ddpm/training_example.ipynb) model were the most successful models developed to create synthetic energy consumption profiles. We created two Jupyter notebooks (hybridWGAN, [DDPM](https://github.com/FraunhoferIEE/sylaski/blob/main/syndatagenerators/models/ddpm/training_example.ipynb)) for users to easily generate new time series data with each trained model.
+A hybridWGAN and [DDPM](https://github.com/FraunhoferIEE/sylaski/blob/main/syndatagenerators/models/ddpm/training_example.ipynb) model were the most successful models developed to create synthetic energy consumption profiles. We prepared two Jupyter notebooks (hybridWGAN, [DDPM](https://github.com/FraunhoferIEE/sylaski/blob/main/syndatagenerators/models/ddpm/training_example.ipynb)) for users to easily generate new time series data with each trained model.
 
 ## In depth - Train the models with your own data
 
 ### Pre-processing of power consumption data
 
-Time series data usually contains outliers, level-shifts, missing values... - this makes it hard to use this data for machine learning applications. In order to generate continous "anomaly free" time series data from energy consumption data we applied some data cleaning to generate a currated data set.
+Time series data usually contains outliers, level-shifts, missing values... - this makes it hard to use this data for machine learning applications. In order to generate continuous "anomaly free" time series data from energy consumption data we applied a data cleaning pipeline to generate a curated data set.
 
 ### Clustering of power profiles
 
-If you have data from multiple different consumers one is often interested to distinguish between different consumer types. For this we developed a framework that can cluster different consumers in order to seperate them.
+If you have data from multiple different consumers one is often interested to distinguish between different consumer types. For this we developed a framework that can cluster different consumers in order to separate them.
 
 ### Training hybridWGAN
 
@@ -34,7 +34,7 @@ The hybrid WGAN......
 
 ### Training DDPM
 
-**TLDR:**
+**TLDR:** \n
 Denoising Diffusion Probabilistic Models (DDPM) are model architectures that are capable of synthesizing real data by learning a so called "denoising process". This process is applied to a randomly initialized sample ultimately resulting in an authentic generated data sample.
 
 ![ddpm_time_series_example](https://github.com/FraunhoferIEE/sylaski/assets/44499467/91c78939-fee4-447e-ab20-99d9bb8fe294)
