@@ -1,8 +1,9 @@
 # Sylas-KI
 
 <div style="text-align: center;">
-  <img src="https://github.com/FraunhoferIEE/sylaski/blob/main/pictures/Sylaski_project_pic.png" alt="Sylas-KI project logo" style="width:90%;">
+  <img src="https://github.com/FraunhoferIEE/sylaski/assets/63824387/ca2c53a8-87a4-4895-9530-20d253500549" alt="Sylas-KI project logo" style="width:90%;">
 </div>
+
 
 ## Idea
 
@@ -13,6 +14,7 @@ Sylas-KI aims to use power consumption data to train machine learning models in 
 ### Data
 
 If you are just interested in **~550 generated synthetic power profiles** you can them as CSV-files ([hybridWGAN](https://doi.org/10.25625/A5VZA9) and [DDPM](https://doi.org/10.25625/A5VZA9)). The models were trained on ~550 private households of the [OpenMeter](https://appstore.logarithmo.de/app/openmeterplatform/v1/demo/page-datenuebersicht?lang=EN) platform and subsequently, user IDs were used as a condition to generate for each one power consumption data from `01-01-2021 till 31.12.2023` with `15min time resolution`.
+
 
 ## Generator for synthetic power profiles
 
@@ -44,7 +46,8 @@ An exemplary notebook were a model is initialized, trained and sampled can be fo
 
 #### In a video we explain the workings of this examplary notebook
 
-[![An Introduction into time series generation with DDPMs](https://github.com/FraunhoferIEE/sylaski/blob/main/pictures/Sylaski_project_pic.png)](https://youtu.be/Z0WWsyelnyQ)
+[![An Introduction into time series generation with DDPMs](https://github.com/FraunhoferIEE/sylaski/assets/44499467/56f4cacf-6202-45f9-9b70-9af6750af7a3)](https://youtu.be/Z0WWsyelnyQ)
+
 
 
 
