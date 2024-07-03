@@ -34,7 +34,7 @@ The hybrid WGAN......
 
 ### Training DDPM
 
-**TLDR:** \n
+**TLDR:** <br/>
 Denoising Diffusion Probabilistic Models (DDPM) are model architectures that are capable of synthesizing real data by learning a so called "denoising process". This process is applied to a randomly initialized sample ultimately resulting in an authentic generated data sample.
 
 ![ddpm_time_series_example](https://github.com/FraunhoferIEE/sylaski/assets/44499467/91c78939-fee4-447e-ab20-99d9bb8fe294)
