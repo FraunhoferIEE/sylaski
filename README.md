@@ -44,7 +44,8 @@ An exemplary notebook were a model is initialized, trained and sampled can be fo
 
 #### In a video we explain the workings of this examplary notebook
 
-[![An Introduction into time series generation with DDPMs](https://github.com/FraunhoferIEE/sylaski/blob/main/pictures/Sylaski_project_pic.png)](https://youtu.be/Z0WWsyelnyQ)
+[![An Introduction into time series generation with DDPMs](https://github.com/FraunhoferIEE/sylaski/assets/44499467/56f4cacf-6202-45f9-9b70-9af6750af7a3)](https://youtu.be/Z0WWsyelnyQ)
+
 
 
 
