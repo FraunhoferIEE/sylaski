@@ -1,0 +1,22 @@
+defaults:
+  - Model: FFVAE
+  - Dataset: LondonSmartMeter
+  - Trainer: BasicVAETrainer
+  - Logger: VAELogger
+  - _self_
+name: "runFFVAE_optim"
+early_stopping_logs: 5
+min_epochs: 20
+num_epochs: 50
+Model:
+  device: "cuda:1"
+  latent_dim: 10
+  num_hiddenunits: 288
+  num_hiddenlayers: 1
+Trainer:
+  kl_weight: 1.5240055364851859e-06
+  lr: 0.0004618585023135405
+  batchsize: 16
+Dataset:
+  val_data_coefficient: 0.15
+  test_data_coefficient: 0.15

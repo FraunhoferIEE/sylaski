@@ -1,0 +1,5 @@
+name: "WassersteinGPCGANTrainer"
+batchsize: 32
+learning_rate: 1e-3
+critic_iterations: 5
+gp_scale: 10

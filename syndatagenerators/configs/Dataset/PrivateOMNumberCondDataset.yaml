@@ -1,0 +1,7 @@
+name: "PrivateOMNumberCondDataset"
+path: "data/openMeter/FullOpenmeter-ClusterWeather-16-01.h5"
+seq_length: 96
+cat_conditions: ["cluster_id", "sensor_id"]
+cont_conditions: ["day", "week", "year", "summertime", "t2m"]
+num_households: 459
+test_data_coefficient: 0.05

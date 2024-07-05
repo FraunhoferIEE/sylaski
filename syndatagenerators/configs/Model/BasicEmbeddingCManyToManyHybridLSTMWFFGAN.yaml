@@ -1,0 +1,7 @@
+name: "BasicEmbeddingCManyToManyHybridLSTMWFFGAN"
+num_hiddenunits: 200
+num_features: 64
+num_hiddenlayers: 2
+embedding_dim: 64
+embedding_out: 16
+device: "cuda"

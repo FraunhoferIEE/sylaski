@@ -1,0 +1,5 @@
+name: "DCWGAN"
+latent_dim: 40
+num_hiddenchannels: 100
+num_hiddenlayers: 6
+device: "cuda"

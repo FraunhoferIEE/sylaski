@@ -1,0 +1,25 @@
+defaults:
+  - Model: DCWGAN
+  - Dataset: LondonSmartMeter
+  - Trainer: WassersteinGPGANTrainer
+  - Logger: GANLogger
+  - _self_
+name: "runDCWGAN_optim"
+early_stopping_logs: 5
+min_epochs: 20
+num_epochs: 50
+Model:
+  device: "cuda:1"
+  latent_dim: 164
+  num_hiddenlayers: 1
+  num_hiddenchannels: 191
+Logger:
+  extra_tags: ""
+Trainer:
+  learning_rate: 0.00041176648296096407
+  gp_scale: 12.323606257251503
+  critic_iterations: 7
+  batchsize: 128
+Dataset:
+  val_data_coefficient: 0.15
+  test_data_coefficient: 0.15

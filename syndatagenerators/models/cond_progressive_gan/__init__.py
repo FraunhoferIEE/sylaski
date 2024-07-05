@@ -1,0 +1,1 @@
+from syndatagenerators.models.cond_progressive_gan.trainer import TrainerCPGAN

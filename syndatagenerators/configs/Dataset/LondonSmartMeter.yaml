@@ -1,0 +1,6 @@
+name: "KeysDataset"
+path: "londonSmartMeter.h5"
+keyset: ['MAC000002', 'MAC000003']
+seq_length: 48
+test_data_coefficient: 0.15
+val_data_coefficient: 0.0

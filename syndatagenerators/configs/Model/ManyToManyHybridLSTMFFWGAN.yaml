@@ -1,0 +1,5 @@
+name: "ManyToManyHybridLSTMFFWGAN"
+num_hiddenunits: 100
+num_hiddenlayers: 2
+num_features: 100
+device: "cuda"

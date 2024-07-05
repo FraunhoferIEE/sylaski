@@ -1,0 +1,27 @@
+defaults:
+  - _self_
+  - paths: default
+
+name: lsm_demo
+
+random_seed: 42
+n_epochs: 100
+
+batch_size: 256
+n_files: 10
+
+optimizer:
+  lr: 1e-3
+  momentum: 0.9
+  weight_decay: 1e-5
+
+cat_columns: ['LCLid']
+cont_columns: ['Summer_Time', 'Year_Sin', 'Year_Cos', 'Week_Sin', 'Week_Cos', 'Day_Sin', 'Day_Cos']
+target_columns: ['KWH_per_half_hour']
+
+seq_len: 48
+seq_shift: 48
+
+embedding_dim: 2
+
+load_df: False

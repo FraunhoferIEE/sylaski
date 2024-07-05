@@ -1,0 +1,5 @@
+name: "WGAN"
+num_hiddenunits: 100
+latent_dim: 100
+num_hiddenlayers: 2
+device: "cuda"

@@ -1,0 +1,5 @@
+name: "BasicCNNVAE"
+latent_dim: 24
+num_hiddenchannels: 100
+num_hiddenlayers: 5
+device: "cuda"

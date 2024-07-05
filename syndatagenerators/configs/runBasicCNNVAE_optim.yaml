@@ -1,0 +1,24 @@
+defaults:
+  - Model: BasicCNNVAE
+  - Dataset: LondonSmartMeter
+  - Trainer: BasicVAETrainer
+  - Logger: VAELogger
+  - _self_
+name: "runBasicCNNVAE_optim"
+early_stopping_logs: 5
+min_epochs: 100
+num_epochs: 1000
+Model:
+  latent_dim: 29
+  num_hiddenchannels: 240
+  num_hiddenlayers: 3
+  device: "cuda:1"
+Logger:
+  extra_tags: ""
+Trainer:
+  kl_weight: 1.8364758545455997e-07
+  lr: 0.00012246732683267553
+  batchsize: 32
+Dataset:
+  val_data_coefficient: 0.15
+  test_data_coefficient: 0.15

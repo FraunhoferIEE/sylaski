@@ -1,0 +1,22 @@
+defaults:
+  - Model: ManyToManyHybridLSTMFFWGAN
+  - Dataset: OMDataset
+  - Trainer: WassersteinGPGANTrainer
+  - Logger: GANLogger
+  - _self_
+name: "runManyToManyHybridLSTMFFWGAN_optim_om"
+early_stopping_logs: 5
+min_epochs: 10
+num_epochs: 50
+Model:
+  device: "cuda:1"
+  num_hiddenunits: 60
+  num_hiddenlayers: 1
+  num_features: 37
+Trainer:
+  learning_rate: 0.00014321013294522032
+  gp_scale: 9.897207540796076
+  critic_iterations: 6
+Dataset:
+  val_data_coefficient: 0.15
+  test_data_coefficient: 0.15

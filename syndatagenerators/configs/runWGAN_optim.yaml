@@ -1,0 +1,25 @@
+defaults:
+  - Model: WGAN
+  - Dataset: LondonSmartMeter
+  - Trainer: WassersteinGPGANTrainer
+  - Logger: GANLogger
+  - _self_
+name: "runWGAN_optim"
+early_stopping_logs: 5
+min_epochs: 20
+num_epochs: 200
+Model:
+  device: "cuda:1"
+  num_hiddenunits: 112
+  latent_dim: 62
+  num_hiddenlayers: 5
+Logger:
+  extra_tags: ""
+Trainer:
+  learning_rate: 0.0001455261971390083
+  gp_scale: 5.058960375349377
+  critic_iterations: 8
+  batchsize: 32
+Dataset:
+  val_data_coefficient: 0.15
+  test_data_coefficient: 0.15

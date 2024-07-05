@@ -1,0 +1,6 @@
+name: "OMDataset"
+path: "private-2021-2022-openMeterCond.h5"
+number_of_households: 105
+seq_length: 96
+test_data_coefficient: 0.15
+val_data_coefficient: 0.0

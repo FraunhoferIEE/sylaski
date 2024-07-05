@@ -1,0 +1,32 @@
+train_params:
+  batch_size: 128 # batch size used in the training dataloader
+  lr_gen: 0.00001 # learning rate of generator: to be optimized.
+  lr_dis: 0.00001 # Learning rate of discriminator
+  epochs: 500 # number of training epochs. dependent on the data, and the model used.
+  lambda_gp: 10.0 # float. weighting of gradient penalty in the critic's loss. In the original paper, 10 is used.
+                # to be optimised.
+  n_critic: 5 # integer defining how often critic is trained more than generator. to be optimised. recommended to be within
+              # [1, 5].
+  name: 1 # name (integer) under which the model is saved
+  input_shape: [1, 96] # number of features of the input
+  latent_dim: 100 # dimension of latent noise vector
+  #target_len: 128 # target length (in time steps).
+  optimizer: 'RMSProp'
+  nb_labels: 1 # number of different labels used for conditioning. To be used in the Conditional ProGAN.
+
+
+dis_params:
+  kernel_size: 3 # kernel length of the critic.
+  channel_dim: 32 # hidden channel dimension.
+
+gen_params:
+  kernel_size: 3 # kernel length in the generator.
+  channel_dim: 32 # hidden channel dimension in the generator.
+
+data_params:
+  window_len: 64 # length of the time series (number of steps)
+  overlap: 0 # overlap between the extracted time series.
+  n_households: 1000 # number of households to use for the training dataset
+  train_data_dir: /path/to/train # path where train data is saved
+  ckpt_dir: /path/to/ckpt # path where model checkpoints are saved
+

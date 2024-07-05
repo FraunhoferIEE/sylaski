@@ -1,0 +1,22 @@
+defaults:
+  - Model: OneToManyHybridLSTMFFVAE
+  - Dataset: LondonSmartMeter
+  - Trainer: BasicVAETrainer
+  - Logger: VAELogger
+  - _self_
+name: "runOneToManyHybridLSTMFFVAE_optim"
+early_stopping_logs: 5
+min_epochs: 20
+num_epochs: 50
+Model:
+  device: "cuda:1"
+  latent_dim: 33
+  num_hiddenunits: 205
+  num_hiddenlayers: 1
+Trainer:
+  kl_weight: 1.3844769446916967e-07
+  lr: 0.005599280386090306
+  batchsize: 64
+Dataset:
+  val_data_coefficient: 0.15
+  test_data_coefficient: 0.15

@@ -1,0 +1,5 @@
+name: "FFVAE"
+latent_dim: 24
+num_hiddenunits: 100
+num_hiddenlayers: 2
+device: "cuda"

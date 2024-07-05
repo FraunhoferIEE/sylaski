@@ -1,0 +1,4 @@
+name: "BasicVAETrainer"
+batchsize: 32
+kl_weight: 1e-6
+lr: 0.001

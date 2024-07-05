@@ -1,0 +1,6 @@
+data_dir: 'data/'
+results_dir: 'results/'
+models_dir: 'models/'
+plot_dir: 'figures/'
+
+lsm_data: 'data/londonSmartMeter.h5'

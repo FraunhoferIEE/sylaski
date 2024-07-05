@@ -1,0 +1,38 @@
+train_params:
+  batch_size: 64 # batch size used in the training dataloader
+  lr: 0.00005 # learning rate: to be optimized.
+  epochs: 1000 # number of training epochs. dependent on the data, and the model used.
+  sample_cycle: 10 # not relevant. determines how often losses are printed during training
+  lambda_gp: 10 # float. weighting of gradient penalty in the critic's loss. In the original paper, 10 is used.
+                # to be optimised.
+  n_critic: 3 # integer defining how often critic is trained more than generator. to be optimised. recommended to be within
+              # [1, 5].
+  epochs_per_step: 5
+  nb_fade_in_epochs: 250 # determines the number of epochs a fading in  process of new layers takes
+  schedule: [500, 1000, 1500, 2000] # specifies at which epoch a new layer is added. Needs to be adjusted in accordance
+                                    # to the target length (i.e. starting from length 8, how often needs the length to
+                                    # be doubled?
+  name: 12 # integer under which the model is saved
+  feature_dim: 1 # number of features of the input
+  target_len: 128 # target length (in time steps).
+  nb_labels: 1 # number of different labels used for conditioning. To be used in the Conditional ProGAN.
+
+
+dis_params:
+  kernel_size: 7 # kernel length of the critic.
+  channel_dim: 32 # hidden channel dimension.
+
+gen_params:
+  kernel_size: 7 # kernel length in the generator.
+  channel_dim: 32 # hidden channel dimension in the generator.
+
+data_params:
+  window_len: 64 # length of the time series in hours (ATTENTION: in this case, it is half the target length since we
+                 # have a resolution of 30 min.
+  overlap: 0 # overlap between the extracted time series.
+  n_households: 1000 # number of households to use for the training dataset
+  train_data_dir: /path/to/train # path where train data is saved
+  ckpt_dir: /path/to/ckpt # path where model checkpoints are saved
+
+
+

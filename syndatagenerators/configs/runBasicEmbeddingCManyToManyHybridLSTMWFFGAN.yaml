@@ -1,0 +1,17 @@
+defaults:
+  - Model: BasicEmbeddingCManyToManyHybridLSTMWFFGAN
+  - Dataset: PrivateOMNumberCondDataset
+  - Trainer: WassersteinGPCGANTrainer
+  - Logger: CGANLogger
+  - _self_
+name: "runBasicEmbeddingCManyToManyHybridLSTMWFFGAN"
+early_stopping_logs: 5
+min_epochs: 20
+num_epochs: 100
+Model:
+  device: "cuda"
+Trainer:
+  learning_rate: 1e-3
+  batchsize: 64
+  critic_iterations: 7
+  
