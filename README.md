@@ -38,8 +38,7 @@ The hybrid WGAN......
 
 **TLDR:** <br/>
 Denoising Diffusion Probabilistic Models (DDPM) are model architectures that are capable of synthesizing real data by learning a so called "denoising process". This process is applied to a randomly initialized sample ultimately resulting in an authentic generated data sample.
-
-![ddpm_time_series_example](https://github.com/FraunhoferIEE/sylaski/assets/44499467/91c78939-fee4-447e-ab20-99d9bb8fe294)
+![noising process](https://github.com/user-attachments/assets/44ed9d61-3bd7-4ed9-97e3-52f101d0fc1c)
 
 During the SylasKI project DDPMs were one of the main architectures that were investigated. The implementation of models, necessary utilities and experiments can be found under `syndatagenerators/models/ddpm`.
 An exemplary notebook were a model is initialized, trained and sampled can be found under [example notebook](https://github.com/FraunhoferIEE/sylaski/blob/main/syndatagenerators/models/ddpm/training_example.ipynb)
